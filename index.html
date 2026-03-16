@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Preference Manager</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+        <body>
+
+        <div class="app">
+
+            <header>
+                <h1>⚙ User Preference Manager</h1>
+                <p>Customize your experience</p>
+            </header>
+
+            <div class="settings-card">
+
+                <!-- Theme Toggle -->
+
+                <div class="setting">
+                    <label>Dark Mode</label>
+                    <label class="switch">
+                        <input type="checkbox" id="themeToggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+
+                <!-- Font Size -->
+
+                <div class="setting">
+                    <label>Font Size</label>
+                    <select id="fontSize">
+                        <option value="14px">Small</option>
+                        <option value="16px">Medium</option>
+                        <option value="20px">Large</option>
+                    </select>
+                </div>
+
+
+                <!-- Language -->
+
+                <div class="setting">
+                    <label>Language</label>
+                    <select id="language">
+                        <option value="en">English</option>
+                        <option value="hi">Hindi</option>
+                    </select>
+                </div>
+
+                <button id="resetBtn" class="reset">Reset Preferences</button>
+
+            </div>
+
+
+            <div class="preview-card">
+                <h2>Preview Area</h2>
+                <p id="sampleText">
+                Welcome to the User Preference Manager Application
+                </p>
+            </div>
+
+        </div>
+
+        <div id="toast"></div>
+
+        <script src="script.js"></script>
+
+        </body>
+</html>
